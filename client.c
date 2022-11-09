@@ -9,11 +9,25 @@ int main(int argc, char *argv[]) {
 	int64_t result;
 	int r;
 
-	/* Connect to the system bus */
-	r = sd_bus_open_user(&bus);
+	/* Connect to the user bus */
+	r = sd_bus_new(&bus);
 	if (r < 0) {
-		fprintf(stderr, "Failed to connect to system bus: %s\n",
+		fprintf(stderr, "Failed to connect to user bus: %s\n",
 			strerror(-r));
+		goto finish;
+	}
+
+	const char *address = "tcp:host=192.168.178.73,port=55556";
+	r = sd_bus_set_address(bus, address);
+	if (r < 0) {
+		fprintf(stderr, "Failed to set address %s: %s\n", address,
+			strerror(-r));
+		goto finish;
+	}
+
+	r = sd_bus_start(bus);
+	if (r < 0) {
+		fprintf(stderr, "Failed to start bus: %s\n", strerror(-r));
 		goto finish;
 	}
 

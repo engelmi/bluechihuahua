@@ -60,8 +60,8 @@ int main(int argc, char *argv[]) {
 	sd_bus *bus = NULL;
 	int r;
 
-	/* Connect to the user bus this time */
-	r = sd_bus_open_user(&bus);
+	/* Connect to the system bus this time */
+	r = sd_bus_open_system(&bus);
 	if (r < 0) {
 		fprintf(stderr, "Failed to connect to system bus: %s\n",
 			strerror(-r));
