@@ -26,8 +26,8 @@ int main(int argc, char *argv[]) {
 		&error, /* object to return error in */
 		&m, /* return message on success */
 		"xx", /* input signature */
-		44, /* first argument */
-		2); /* second argument */
+		44L, /* first argument */
+		2L); /* second argument */
 	if (r < 0) {
 		fprintf(stderr, "Failed to issue method call: %s\n",
 			error.message);
