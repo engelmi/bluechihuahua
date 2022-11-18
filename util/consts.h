@@ -1,7 +1,7 @@
 #ifndef BLUECHIHUAHUA_CONSTS
 #define BLUECHIHUAHUA_CONSTS
 
-#define EXIT_SUCCESS 0
-#define EXIT_FAILURE 1
+#define USEC_PER_SEC ((uint64_t)1000000ULL)
+#define NSEC_PER_USEC ((uint64_t)1000ULL)
 
 #endif

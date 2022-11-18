@@ -1,5 +1,5 @@
-#ifndef VTABLE_SERVICE
-#define VTABLE_SERVICE
+#ifndef BLUECHIHUAHUA_VTABLE_SERVICE
+#define BLUECHIHUAHUA_VTABLE_SERVICE
 
 #include <systemd/sd-bus.h>
 

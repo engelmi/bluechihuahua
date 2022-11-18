@@ -1,9 +1,9 @@
+#include "vtable.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>
 #include <systemd/sd-bus.h>
-
-#include "vtable.h"
 
 int method_multiply(sd_bus_message *m, void *userdata,
 		    sd_bus_error *ret_error) {

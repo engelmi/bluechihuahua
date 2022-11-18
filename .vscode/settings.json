@@ -1,7 +1,14 @@
 {
     "files.associations": {
         "socket.h": "c",
-        "sd-bus.h": "c"
+        "sd-bus.h": "c",
+        "errno.h": "c",
+        "list.h": "c",
+        "manager.h": "c",
+        "enum.h": "c",
+        "memory.h": "c",
+        "dbus.h": "c",
+        "consts.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
