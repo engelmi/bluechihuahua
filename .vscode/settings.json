@@ -8,7 +8,11 @@
         "enum.h": "c",
         "memory.h": "c",
         "dbus.h": "c",
-        "consts.h": "c"
+        "consts.h": "c",
+        "node.h": "c",
+        "jobtracker.h": "c",
+        "in.h": "c",
+        "stdio.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
