@@ -1,0 +1,6 @@
+# Workload C on node 2
+[Unit]
+StopWhenUnneeded=yes
+
+# Services in this workload
+Requires=container-c2.service

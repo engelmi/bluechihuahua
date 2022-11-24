@@ -1,0 +1,5 @@
+[Unit]
+StopWhenUnneeded=yes
+
+[Service]
+ExecStart=/bin/sleep 1000d

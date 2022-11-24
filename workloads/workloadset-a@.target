@@ -1,0 +1,8 @@
+[Unit]
+# Workloads in this set
+Requires=workload-a@%i.target
+
+# Conflict with all other workload sets
+Conflicts=workloadset-ab@%i.target
+Conflicts=workloadset-ac@%i.target
+Conflicts=workloadset-c@%i.target

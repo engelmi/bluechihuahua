@@ -1,0 +1,7 @@
+# Default workload B on generic nodes (same services)
+[Unit]
+StopWhenUnneeded=yes
+
+# Services in this workload
+Requires=container-b.service
+Requires=container-shared.service

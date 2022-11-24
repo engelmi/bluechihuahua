@@ -1,0 +1,7 @@
+# Workload A on node 2
+[Unit]
+StopWhenUnneeded=yes
+
+# Services in this workload
+Requires=container-a2.service
+Requires=container-shared.service

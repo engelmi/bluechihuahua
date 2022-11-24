@@ -1,0 +1,5 @@
+# Default workload A on generic nodes (no deps)
+[Unit]
+StopWhenUnneeded=yes
+
+# No services in this workload
